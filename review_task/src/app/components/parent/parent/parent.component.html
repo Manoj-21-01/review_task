@@ -1,0 +1,12 @@
+<!-- parent.component.html -->
+<span>parent tag works</span>
+<form (ngSubmit)="onSubmit()">
+    <div class="container">
+        <div class="data">
+            <input type="text" [(ngModel)]="userInput" name="userInput">
+            <input type="text" [(ngModel)]="colorInput" name="colorInput" placeholder="Enter color">
+            <button type="submit">submit</button>
+        </div>
+    </div>
+</form>
+<router-outlet></router-outlet>
